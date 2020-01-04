@@ -1,2 +1,8 @@
 # IS_Prac4_Single-columnar-and-double-columnar-transposition-technique-
 Implement Single columnar and double columnar transposition technique for encryption and decryption Considering the cases irregular and regular matrix.
+The name of the cipher comes after the operations on a matrix, that are performed during both, encryption and decryption. The number of columns of the matrix is determined by the secret key.
+The secret key is usually a word (or just a sequence of letters). It has to be converted into a sequence of numbers. The numbers are defined by an alphabetical order of the letters in the keyword. The letter which is first in the alphabet will be the number 1, the second letter in the alphabetical order will be 2, and so on.
+If there are multiple identical letters in the keyword, each next occurrence of the same letter should be converted into a number that is equal to the number for the previous occurrence increased by one.
+The Double Columnar Transposition was introduced to make cryptanalysis of messages encrypted by the Columnar Transposition more difficult. It was supposed to prevent anagrams of the plaintext words appearing in the analysed ciphertext.
+The main idea behind the Double Columnar Transposition is to encrypt the message twice, by using the original Columnar Transposition, with identical or different secret keys. The output from the first encryption would be the input to the second encryption.
+Breaking the Double Columnar Transposition is more difficult than breaking its simpler version, due to the fact that anagrams will not appear when trying to apply different sizes of matrices to the intercepted ciphertext.
